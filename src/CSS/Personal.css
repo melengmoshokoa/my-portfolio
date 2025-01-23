@@ -15,6 +15,7 @@
     height: 49vh;
     border-radius: 15px;
     margin: 3vh;
+    margin-top: 8vh;
     display: flex;
     align-items:center; 
     justify-content: center;
@@ -148,10 +149,10 @@
     display: flex;
     align-items:center;
     justify-content: center;
-    flex-direction: row
+    flex-direction: row;
   }
   
-  .MenuBar ul {
+  .MenuBar1 ul {
     list-style: none; 
     padding: 0;
     flex-direction: row;
@@ -162,12 +163,12 @@
 
   }
   
-  .MenuBar li {
+  .MenuBar1 li {
     margin: 10px 0; 
     width: 150px ;
   }
   
-  .MenuBar a {
+  .MenuBar1 a {
     text-decoration: none;
     color: #333;
     font-size: 1.2rem;
@@ -175,7 +176,7 @@
     transition: color 0.3s ease;
   }
   
-  .MenuBar a:hover {
+  .MenuBar1 a:hover {
     color: #ffffff; 
     transform: scale(1.05);
   }
