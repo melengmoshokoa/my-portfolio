@@ -1,0 +1,181 @@
+.Personal {
+    min-height: 130vh;
+    margin: 0;
+    overflow-y: auto;
+    flex-direction:row;
+    /* align-items:center; */
+    /* justify-content: center; */
+    display: flex;
+}
+
+
+.Intro {
+    background-color: rgb(0, 0, 0);
+    width: 84vh;
+    height: 49vh;
+    border-radius: 15px;
+    margin: 3vh;
+    display: flex;
+    align-items:center; 
+    justify-content: center;
+    
+}
+
+.InnerIntro{
+    background-color: rgb(193, 27, 27);
+    width: 80vh;
+    height: 45vh;
+    border-radius: 15px;
+    /* margin: 3vh; */
+    align-items:center; 
+    justify-content: center;
+}
+
+.Info1 {
+    background-color: rgb(0, 0, 0);
+    width: 84vh;
+    height: 49vh;
+    border-radius: 15px;
+    margin: 3vh;
+    display: flex;
+    align-items:center; 
+    justify-content: center;
+}
+
+
+
+.Info2 {
+    background-color: rgb(0, 0, 0);
+    width: 84vh;
+    height: 49vh;
+    border-radius:15px;
+    margin: 3vh;
+}
+
+.Info3 {
+    background-color: rgb(0, 0, 0);
+    width: 84vh;
+    height: 49vh;
+    border-radius: 15px;
+    margin: 3vh;
+}
+
+.Bigger {
+    background-color: rgb(150, 15, 15);
+    width: 44vh;
+    height: 39vh;
+    border-radius: 15px;
+    margin: 3vh;
+    margin-top: 8vh;
+    display: flex;
+    align-items:center; 
+    justify-content: center;
+    
+ 
+}
+
+.InnerIntro2{
+    background-color: rgb(193, 27, 27);
+    width: 42vh;
+    height: 36vh;
+    border-radius: 15px;
+    /* margin: 3vh; */
+    align-items:center; 
+    justify-content: center;
+}
+
+.InnerIntro4{
+    background-color: rgb(193, 27, 27);
+    width: 42vh;
+    height: 51vh;
+    border-radius: 15px;
+    /* margin: 3vh; */
+    align-items:center; 
+    justify-content: center;
+}
+
+.Bigger2 {
+    background-color: rgb(15, 76, 150);
+    width: 44vh;
+    height: 54vh;
+    border-radius: 15px;
+    margin: 3vh;
+    display: flex;
+    align-items:center; 
+    justify-content: center;
+ 
+}
+
+.Diva {
+
+    flex-direction:column
+    
+}
+
+.Diva2 {
+    display: flex;
+}
+
+.Bigger3 {
+    background-color: rgb(251, 5, 5);
+    width: 62vh;
+    height: 101vh;
+    border-radius: 15px;
+    margin: 3vh;
+    display: flex;
+    align-items:center; 
+    justify-content: center;
+ 
+}
+
+.InnerIntro3{
+    background-color: rgb(193, 27, 27);
+    width: 59vh;
+    height: 98vh;
+    border-radius: 15px;
+    align-items:center; 
+    justify-content: center;
+}
+
+.MenuBar1 {
+    position: fixed; 
+    left: 19%; 
+    top: 0; 
+    width: 49%;
+    height: 7vh;
+    background-color: #ffffff; 
+    border-radius: 15px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: row
+  }
+  
+  .MenuBar ul {
+    list-style: none; 
+    padding: 0;
+    flex-direction: row;
+    display: flex;
+    align-items:center;
+    justify-content: space-around; 
+    gap: 50px;
+
+  }
+  
+  .MenuBar li {
+    margin: 10px 0; 
+    width: 150px ;
+  }
+  
+  .MenuBar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .MenuBar a:hover {
+    color: #ffffff; 
+    transform: scale(1.05);
+  }

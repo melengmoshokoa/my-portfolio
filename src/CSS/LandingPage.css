@@ -1,0 +1,241 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Cofa+Sans:wght@400;700&display=swap');
+
+.body{
+  background-color:  #F9E8D3;
+}
+
+  .LandingPage {
+    background-color:  #F9E8D3;
+    min-height: 130vh;
+    margin: 0;
+    overflow-y: auto;
+    flex-direction: column;
+    display:flex;
+    font-family: 'Cofa Sans', sans-serif;
+    
+  }
+
+  .SideDivs {
+    flex-direction: column; 
+    justify-content: space-around; 
+    height: 170vh;
+    display: flex;
+    
+  }
+
+  .PersonalPage {
+    width: 26%;
+    height: 40%;
+    border-radius: 15px;
+    margin: 2vh;
+    margin-top: 3vh;
+    transition: transform 0.3s ease;
+    box-sizing: border-box; 
+    overflow: hidden; 
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+
+  .Projects {
+    width: 26%;
+    height: 40%;
+    border-radius: 15px;
+    margin: 2vh;
+    margin-top: 3vh;
+    transition: transform 0.3s ease;
+    box-sizing: border-box; 
+    overflow: hidden; 
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+
+  .Hobbies {
+    width: 26%;
+    height: 40%;
+    border-radius: 15px;
+    margin: 2vh;
+    margin-top: 3vh;
+    transition: transform 0.3s ease;
+    box-sizing: border-box; 
+    overflow: hidden; 
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+
+  .glassmorphism {
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    border-radius: 15px; /* Rounded corners */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border to enhance the frosted effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: absolute; /* Positioned on top of the image */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; /* Ensure it's above the image */
+    transition: transform 0.3s ease;
+  }
+
+  .VerticalLine {
+    position: absolute;
+    left: 28%; 
+    top: 0;
+    width: 1px; 
+    height: 167vh; 
+    background-color: #000;
+    margin: 2vh;
+  }
+
+  .PersonalPage img, .Projects img, .Hobbies img {
+    width: 100%;        /* Ensure images stretch to fill div width */
+    height: 100%;       /* Ensure images stretch to fill div height */
+    object-fit: cover;  /* Ensures image covers the div while maintaining aspect ratio */
+    border-radius: 5%;  /* Rounded corners for the images */
+  }
+
+  .PersonalPage:hover, .Projects:hover, .Hobbies:hover {
+    transform: scale(1.05); 
+    background: rgba(255, 255, 255, 0.3); 
+    backdrop-filter: blur(50px);
+  }
+
+  .image-gallery img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px; 
+    border-radius: 15px;
+    object-fit: fill;
+  }
+
+  .MenuBar {
+    position: fixed; 
+    left: 58%; 
+    top: 0; 
+    width: 20%;
+    background-color: #f9e8d3; 
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: row
+  }
+  
+  .MenuBar ul {
+    list-style: none; 
+    padding: 0;
+    flex-direction: row;
+    display: flex;
+    align-items:center;
+    justify-content: space-around; 
+    gap: 50px;
+
+  }
+  
+  .MenuBar li {
+    margin: 10px 0; 
+    width: 150px ;
+  }
+  
+  .MenuBar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .MenuBar a:hover {
+    color: #ffffff; 
+    transform: scale(1.05);
+  }
+
+  .Name {
+    position: fixed; 
+    left:40%; 
+    top: 15%; 
+    width: 50%;
+    background-color: #f9e8d3; 
+    display: flex;
+    flex-direction: column; 
+    align-items:center;
+    cursor: zoom-in; 
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .Name h3:hover {
+    transform: scale(1.1);
+  }
+
+  .Name h3 {
+    margin-bottom: 5px; 
+  }
+
+  .buttons {
+    display:flex;
+    gap: 50px;
+    margin: 10px;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+
+  .buttons button{
+    background-color: #f9e8d3; 
+    border-radius: 15px;
+    border: 1.9px solid black;
+    padding: 7px 20px; 
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    
+  }
+
+  .buttons button:hover {
+    background-color: #000000;  
+    transform: scale(1.05);   
+    color: #fff;     
+  }
+
+  .typing-effect {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid black; 
+    animation: typing 3.5s steps(40) 1s 1 normal both, blink 0.75s step-end infinite; 
+  }
+
+  .typing-effect2 {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid black; 
+    animation: typing2 3.5s steps(40) 1s 1 normal both, blink 0.75s step-end infinite; 
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 32%;
+    }
+  }
+
+  @keyframes typing2 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 57%;
+    }
+  }
+  
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
