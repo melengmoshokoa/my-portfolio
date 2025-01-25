@@ -48,6 +48,13 @@
   font-size: 96px;
 }
 
+.bebas-neue-sc-bold1 {
+  font-family: "Bebas Neue", serif;
+  font-weight: 700;
+  font-style:italic;
+  font-size: 56px;
+}
+
 .bebas-neue-sc-regular {
   font-family: "Bebas Neue", serif;
   font-weight: 400;

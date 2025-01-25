@@ -6,26 +6,31 @@
     /* align-items:center; */
     /* justify-content: center; */
     display: flex;
+    background-color: #000000;
 }
 
+.Intro:hover, .Info1:hover, .Info2:hover, .Info3:hover, .Bigger:hover, .Bigger2:hover, .Bigger3:hover {
+    transform: scale(1.04); /* Increases the size by 10% when hovered */
+}
 
 .Intro {
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
     width: 84vh;
     height: 49vh;
-    border-radius: 15px;
+    border-radius: 25px;
     margin: 3vh;
     margin-top: 8vh;
     display: flex;
-    align-items:center; 
+    align-items: center; 
     justify-content: center;
-    
+    transition: transform 0.3s ease;
+    border: 10px solid #F9E8D3; /* This adds a 10px solid black border */
 }
 
 .InnerIntro{
-    background-color: rgb(193, 27, 27);
-    width: 80vh;
-    height: 45vh;
+    background-color: #F9E8D3;
+    width: 82vh;
+    height: 46vh;
     border-radius: 15px;
     /* margin: 3vh; */
     align-items:center; 
@@ -33,7 +38,7 @@
 }
 
 .Info1 {
-    background-color: rgb(0, 0, 0);
+    background-color:#ffffff;
     width: 84vh;
     height: 49vh;
     border-radius: 15px;
@@ -41,28 +46,30 @@
     display: flex;
     align-items:center; 
     justify-content: center;
-}
-
+    transition: transform 0.3s ease;
+}   
 
 
 .Info2 {
-    background-color: rgb(0, 0, 0);
+    background-color: #AB784E;
     width: 84vh;
     height: 49vh;
     border-radius:15px;
     margin: 3vh;
+    transition: transform 0.3s ease;
 }
 
 .Info3 {
-    background-color: rgb(0, 0, 0);
+    background-color: #AB784E;
     width: 84vh;
     height: 49vh;
     border-radius: 15px;
     margin: 3vh;
+    transition: transform 0.3s ease;
 }
 
 .Bigger {
-    background-color: rgb(150, 15, 15);
+    background-color: #000000;
     width: 44vh;
     height: 39vh;
     border-radius: 15px;
@@ -71,32 +78,45 @@
     display: flex;
     align-items:center; 
     justify-content: center;
+    transition: transform 0.3s ease;
     
  
 }
 
 .InnerIntro2{
-    background-color: rgb(193, 27, 27);
+    background-color: #000000;
     width: 42vh;
     height: 36vh;
     border-radius: 15px;
-    /* margin: 3vh; */
+    margin: 3vh;
     align-items:center; 
     justify-content: center;
+}
+
+.InnerIntro2 h2 {
+    text-decoration: underline;
+    text-decoration-color: #F9E8D3; 
+    text-decoration-thickness: 3px; 
+    text-underline-offset: 5px; 
+    color: #ffffff;
+}
+
+.InnerIntro2 h3, h4 {
+    color: #ffffff;
 }
 
 .InnerIntro4{
-    background-color: rgb(193, 27, 27);
+    background-color: #000000;
     width: 42vh;
     height: 51vh;
     border-radius: 15px;
-    /* margin: 3vh; */
+    margin: 4vh;
     align-items:center; 
     justify-content: center;
 }
 
-.Bigger2 {
-    background-color: rgb(15, 76, 150);
+/* .Bigger2 {
+    background-color: #AB784E;
     width: 44vh;
     height: 54vh;
     border-radius: 15px;
@@ -104,8 +124,9 @@
     display: flex;
     align-items:center; 
     justify-content: center;
+    transition: transform 0.3s ease;
  
-}
+} */
 
 .Diva {
 
@@ -118,24 +139,39 @@
 }
 
 .Bigger3 {
-    background-color: rgb(251, 5, 5);
+    background-color: #ffffff;
     width: 62vh;
     height: 101vh;
-    border-radius: 15px;
+    border-radius: 0px;
     margin: 3vh;
     display: flex;
     align-items:center; 
     justify-content: center;
+    transition: transform 0.3s ease;
  
 }
 
 .InnerIntro3{
-    background-color: rgb(193, 27, 27);
+    background-color: #000000;
     width: 59vh;
     height: 98vh;
-    border-radius: 15px;
+    border-radius: 0px;
     align-items:center; 
     justify-content: center;
+    border: 5px solid #000000;
+}
+
+.InnerIntro3 h3{
+    color: #ffffff;
+    padding: 10px;
+}
+
+.InnerIntro3 h2{
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: #F9E8D3; /* Gold color for the underline */
+    text-decoration-thickness: 3px;
+    
 }
 
 .MenuBar1 {
@@ -144,7 +180,7 @@
     top: 0; 
     width: 49%;
     height: 7vh;
-    background-color: #ffffff; 
+    background-color: #000000; 
     border-radius: 15px;
     display: flex;
     align-items:center;
@@ -170,7 +206,7 @@
   
   .MenuBar1 a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     font-size: 1.2rem;
     font-weight: bold;
     transition: color 0.3s ease;
